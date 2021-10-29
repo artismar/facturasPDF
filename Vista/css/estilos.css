@@ -1,0 +1,54 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: lightskyblue;
+}
+
+.login-user {
+    margin: 80px 340px;
+}
+
+.actualizar-usuario{
+    padding: 10px;
+    border: black solid 1px;
+    width: 450px;
+    background-color: rgb(166, 240, 197);
+}
+
+.actualizar-usuario input{
+    background-color: lightskyblue;
+    border: 0px;
+}
+
+.actualizar-usuario input:read-only{
+    background-color: rgb(166, 212, 240);
+    outline: none;
+}
+
+.actualizar-usuario input:focus:read-only{
+    background-color: rgb(166, 212, 240);
+    border: none;
+    outline: none;
+}
+
+.actualizar-usuario input:focus{
+    background-color: lightskyblue;
+}
+
+.espacio-footer{
+    padding-top: 100px;
+}
+
+footer {
+    /* padding-top: 50px; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: black;
+  }

@@ -1,0 +1,88 @@
+--- INFORMACION ---
+
+El nombre de la BD es 'facturas'
+El nombre del proyecto es 'facturasPDF'
+
+//// La password es la misma para todos los usuarios: 'contra123'
+//// USUARIOS:
+-> Usuario: Lucas| Rol: [ADMINISTRADOR]
+-> Usuario: Gustavo | Rol: [LECTOR]
+
+La libreria esta ubicada en lib/fpdf/
+
+-------------------------------------------------------------------------------------------------
+
+Libreria elegida: FPDF http://www.fpdf.org/
+
+FPDF es una clase escrita en PHP que permite generar documentos PDF directamente desde PHP
+
+FPDF no necesita de ninguna extensión para PHP (excepto Zlib para activar la compresión y GD para soporte a GIF)
+Funciona con PHP5 (≥ 5.1) y PHP7.
+
+LICENCIA: FPDF es liberado bajo una licencia permisiva: no hay restricción de uso. Usted puede integrarlo libremente en su aplicación (comercial o no), con o sin modificaciones.
+
+Instalacion:
+Descargar archivo ZIP en el sitio oficial, descomprimirlo y colocarlo en tu proyecto.
+
+Funciones:
+- Elección de la unidad de medida, formato de página y márgenes
+- Gestión de cabeceras y pies de página
+- Salto de página automático
+- Salto de línea y justificación del texto automáticos
+- Admisión de imágenes (JPEG, PNG y GIF)
+- Colores
+- Enlaces
+- Admisión de fuentes TrueType, Type1 y codificación
+- Compresión de página
+
+El sitio oficial brinda Tutoriales para aprender rapidamente a usar la libreria, como scripts realizados por los usuarios y una seccion FAQ para dudas.
+
+Tambien hay un manual que te muestra todos los metodos que existen en la clase y cuales son sus funciones.
+
+----------------------------------------------------------------------------------------------
+FUENTES
+
+Fuentes estandar (obligatorio invocar metodo de fuente para imprimir texto)
+- Courier (fixed-width)
+- Helvetica o Arial (sinónimo; sans serif)
+- Times (serif)
+- Symbol (symbolic)
+- ZapfDingbats (symbolic)
+
+Se puede agregar fuentes.
+
+El texto se puede personalizar colocandole bordes y con colores.
+
+La codificación estándar de fuentes en FPDF es ISO-8859-1 o windows-1252. Es posible realizar una conversión a la norma ISO-8859-1 con utf8_decode()
+
+----------------------------------------------------------------------------------------------
+PAGINA
+
+Se puede establecer una cabecera y pie de pagina que estaran fijos en cada una de ellas.
+El salto de pagina automatico.
+
+Tiene un metodo que te permite ver el numero de pagina.
+
+Se puede modificar valores como:
+- Margenes (Configurable en cada lado)
+- Posicion actual
+- Ancho de lineas
+- Tamaño de la fuente
+
+Se puede personalizar el fondo con otro color o con una imagen.
+
+----------------------------------------------------------------------------------------------
+IMAGENES
+
+Se admiten imagenes, los formatos compatibles son:
+- JPEG
+- PNG
+- GIF (Necesita una extencion para PHP 'GD')
+
+----------------------------------------------------------------------------------------------
+FORMAS/DIBUJOS
+
+Se pueden dibujar:
+- lineas
+- Rectangulos
+- Bordes
